@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display:flex;
+            width:0%;
+        }
+        .nav{
+            display:inline-block;
+        }
+        .dnav{
+            display:none;
+        }
+        .dnav>h3{
+            background-color: black;
+            color: white;
+            transition:all 3s ease 3s;
+        }
+        .nav:hover .dnav{
+            display:block;
+            background-color: white;
+            color:black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="nav">
+            <h1>Courses</h1>
+            <div class="dnav">
+                <h3>DSA</h3>
+                <h3>GATE</h3>
+                <h3>DataScience</h3>
+                <h3>MachineLearning</h3>
+            </div>
+        </div>
+    <div class="nav" >
+        <h1>Tutorials</h1>
+            <div class="dnav">
+                <h3>Python</h3>
+                <h3>DevOps</h3>
+                <h3>DataScience</h3>
+                <h3>MachineLearning</h3>
+            </div>
+        </div>
+    <div class="nav">
+        <h1>Jobs</h1>
+            <div class="dnav">
+                <h3>Apply now</h3>
+                <h3>Search jobs</h3>
+                <h3>Job updates</h3>
+                <h3>Job openings</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
