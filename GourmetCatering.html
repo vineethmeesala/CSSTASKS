@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pnav{
+            display:flex;
+            background-color: whitesmoke;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .cnav{
+            display:flex;
+            gap:20px;
+            justify-content: end;
+           
+        }
+        .imag>img{
+            width:100%;
+            height:100vh;
+            position:relative;
+        }
+        .imag>h2{
+            position:absolute;
+            top: 100%;   
+            color:gray 
+        }
+        .about{
+            display:flex;
+            justify-content: center;
+            padding:40px;
+            margin-top:50px;
+        }
+        .about>img{
+            height: 600px;
+            width:450px;
+        }
+        .about1{
+            height:600px;
+            width:500px;
+            padding-left:40px;
+        }
+        .about1>h1,h4{
+            text-align: center;
+        }
+        .menu{
+            display:flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            margin-top:50px;
+        }
+        .menu>img{
+            height:600px;
+            width:500px;
+        }
+        .menu1{
+            height:600px;
+            width:500px;
+           
+        }
+        .menu1>h1{
+            text-align: center;
+        }
+        .contact{
+            margin:60px;
+            padding:70px;
+        }
+        .form{
+            display:flex;
+            flex-direction: column;
+            gap:10px;
+        }
+        .footer{
+            background-color:lightgray;
+            display: flex;
+            justify-content: center;
+            height:60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pnav">
+        <h3>Gourmet au Catering</h3>
+        <div class="cnav">
+            <div><h3>About</h3></div>
+            <div> <h3>Menu</h3></div>
+            <div><h3>Contact</h3></div>
+        </div>
+    </div>
+    
+    <div class="imag">
+      <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="burger">
+      <h2>Le Catering</h2>
+    </div>
+    <div class="about">
+        <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="">
+        <div class="about1">
+            <h1>About Catering</h1>
+            <h4>Tradition since 1889</h4>
+            <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+            <P>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="">
+        <div class="menu1">
+            <h1>Our Menu</h1>
+            <h3>Bread Basket</h3>
+            <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+            <h3>Honey Almond Granola with Fruits</h3>
+            <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+            <h3>Belgian Waffle</h3>
+            <p>Vanilla flavored batter with malted flour 7.50</p>
+            <h3>Scrambled eggs</h3>
+            <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+            <h3>Blueberry Pancakes</h3>
+            <p>With syrup, butter and lots of berries 8.50</p>
+        </div>
+    </div>
+
+    <div class="contact">
+       <h1>Contact</h1>
+       <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+       <p style="color:lightblue">Catering Service, 42nd Living St, 43043 New York, NY</p>
+       <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+       <form class="form">
+            <input type="text" id="name" placeholder="Name" >
+            <input type="number" id="people" placeholder="How many people">
+            <input type="datetime-local" name="datetime" >
+            <textarea type="message" id="message" placeholder="Message/Special Requirements"></textarea>
+        </form>
+        <button>send message</button>
+    </div>
+    <div class="footer">
+        <h5>Powered by<a href="">w3.css</h5>
+    </div>
+</body>
+</html>
