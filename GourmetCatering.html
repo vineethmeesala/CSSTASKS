@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+        }
         .pnav{
             display:flex;
             background-color: whitesmoke;
             align-items: center;
             justify-content: space-between;
+            position:fixed;
+            z-index: 1000;
+            width:100%;
         }
         .cnav{
             display:flex;
@@ -24,7 +31,7 @@
         }
         .imag>h2{
             position:absolute;
-            top: 100%;   
+            top: 90%;   
             color:gray 
         }
         .about{
